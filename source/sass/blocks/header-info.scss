@@ -9,7 +9,7 @@
     line-height: 74px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $color-white;
     margin: 0;
 }
 
@@ -18,7 +18,7 @@
     font-size: 32px;
     line-height: 32px;
     font-weight: normal;
-    color: #ffffff;
+    color: $color-white;
 }
 
 .header-info__request {
@@ -28,4 +28,18 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.header-info__link {
+    padding: 17px 42px;
+}
+
+.header-info__delivery {
+    width: 210px;
+    margin: 0;
+    margin-top: 10px;
+    color: $color-white;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
 }
