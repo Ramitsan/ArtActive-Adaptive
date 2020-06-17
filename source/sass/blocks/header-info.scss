@@ -1,0 +1,31 @@
+.header-info {
+    width: 514px;
+}
+
+.header-info__slogan {
+    width: 332px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    line-height: 74px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+}
+
+.header-info__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.header-info__request {
+    width: 485px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
