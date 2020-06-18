@@ -1,0 +1,51 @@
+.banners-print__info {
+    width: 488px;
+}
+
+.banners-print__list {
+    margin-bottom: 75px;
+}
+
+.banners-print__consultation {
+    width: 473px;
+    background-color: #883eca;
+    border-radius: 10px;
+    box-shadow: 0px 10px 23px -10px #510856;
+    padding: 33px 34px;
+    padding-bottom: 37px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.banners-print__consultation-left {
+    margin-right: 23px;
+}
+
+.banners-print__consultation-left span {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.banners-print__consultation-left p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.banners-print__consultation-link {
+    padding: 15px 45px;
+}
+
+.banners-print__slider {
+    width: 585px;
+    margin: 0;
+    padding: 0;
+    padding-top: 81px;
+}
