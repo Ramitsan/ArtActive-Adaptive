@@ -4,10 +4,6 @@
     padding-bottom: 117px;
 }
 
-.services__container {
-    display: flex;
-}
-
 .services__slogan {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
@@ -19,4 +15,12 @@
 .services__slogan--one {
     width: 450px;
     margin-bottom: 60px;
+}
+
+.services__slogan--two {
+    margin-bottom: 55px;
+}
+
+.services__text--two {
+    margin-bottom: 50px;
 }
