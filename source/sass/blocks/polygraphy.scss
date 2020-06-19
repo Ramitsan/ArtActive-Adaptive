@@ -1,0 +1,39 @@
+.polygraphy {
+    padding-bottom: 160px;
+    background-color: #faf8fb;
+}
+
+.polygraphy__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.polygraphy__image {
+    padding: 0;
+    width: 544px;
+}
+
+.polygraphy__image img {
+    margin-left: 91px;
+}
+
+.polygraphy__form {
+    flex-grow: 1;
+}
+
+.polygraphy__questions span {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: normal;
+    font-style: italic;
+    color: #383d52;
+}
+
+.polygraphy__request {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #383d52;
+}
