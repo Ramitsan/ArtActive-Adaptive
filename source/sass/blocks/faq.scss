@@ -1,0 +1,76 @@
+.faq {
+    padding-top: 20px;
+    padding-bottom: 170px;
+}
+
+.faq__list {
+    list-style: none;
+    height: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+    padding-left: 0;
+}
+
+.faq__item {
+    width: 555px;
+}
+
+.faq__question {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.faq-consultation {
+    width: 1140px;
+    margin: 0 auto;
+    padding-top: 43px;
+    padding-bottom: 45px;
+    border-radius: 5px;
+    background-color: $color-violet-decorative;
+    background-image: url(../../img/111.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.faq-consultation span,
+.faq-consultation__request {
+    margin-left: 315px;
+    color: $color-white;
+}
+
+.faq-consultation__form {
+    width: 780px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 315px;
+}
+
+.faq-consultation__form-container {
+    width: 100%;
+}
+
+.faq-consultation__form input {
+    width: 243px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #cccccc;
+    margin-right: 42px;
+    padding-bottom: 13px;
+    color: $color-white;
+    outline: none;
+}
+
+.faq-consultation__form input[type="text"]::placeholder,
+.faq-consultation__form input[type="tel"]::placeholder {
+    color: $color-white;
+    font-style: italic;
+}
+
+.faq-consultation__button-submit {
+    padding: 17px 42px;
+}
