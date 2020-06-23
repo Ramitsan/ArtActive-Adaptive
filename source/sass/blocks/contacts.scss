@@ -26,3 +26,49 @@
     border-radius: 10px;
     z-index: 100;
 }
+
+.contacts__title {
+    margin-bottom: 60px;
+}
+
+.contacts__address,
+.contacts__email,
+.contacts__phone {
+    padding-left: 28px;
+    position: relative;
+}
+
+.contacts__address,
+.contacts__email {
+    margin-bottom: 23px;
+}
+
+.contacts__address::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../img/map-pin.png);
+    width: 11px;
+    height: 17px;
+    left: 0px;
+    top: 3px;
+}
+
+.contacts__email::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../img/mail.png);
+    width: 13px;
+    height: 10px;
+    left: 0px;
+    top: 7px;
+}
+
+.contacts__phone::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../img/phone.png);
+    width: 14px;
+    height: 15px;
+    left: 0px;
+    top: 3px;
+}
