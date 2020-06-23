@@ -5,7 +5,8 @@
 .reviews-slider__container {
     display: flex;
     flex-direction: row;
-    transform: translateX(-60%);
+    // transform: translateX(-60%);
+    margin: 0 auto;
     position: relative;
 }
 
