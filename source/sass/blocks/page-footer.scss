@@ -1,0 +1,25 @@
+.page-footer {
+    width: 100%;
+    background-color: $color-violet-footer;
+}
+
+.page-footer__wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 17px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-footer__copyright,
+.page-footer__confidentiality-link,
+.page-footer__design {
+    margin: 0;
+    color: $color-white;
+    opacity: 0.7;
+}
+
+.page-footer__confidentiality-link {
+    text-decoration: underline;
+}
