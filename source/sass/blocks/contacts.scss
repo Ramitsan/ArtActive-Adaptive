@@ -2,20 +2,17 @@
     width: 100%;
     height: 653px;
     background-color: $color-background;
-    // background-image: url(../../img/map-desktop.png);
+    background-image: url(../../img/map-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 0px;
 }
 
-// .contacts__map {
-//     width: 100%;
-//     position: absolute;
-//     z-index: 99;
-// }
 #map {
     width: 100%;
     height: 653px;
+    position: absolute;
+    z-index: 99;
 }
 
 .contacts__container {
