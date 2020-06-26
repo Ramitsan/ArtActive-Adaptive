@@ -300,8 +300,7 @@
 
             <section class="section contacts">
                 <div id="map" class="contacts__map">
-                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2134.497830039758!2d39.84400433837246!3d57.657022965525776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b291975ff085d7%3A0xae1db2706ff662ac!2z0L_RgC4g0J7QutGC0Y_QsdGA0Y8sIDg4LCDQr9GA0L7RgdC70LDQstC70YwsINCv0YDQvtGB0LvQsNCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCAxNTAwMDM!5e0!3m2!1sru!2sby!4v1592916665504!5m2!1sru!2sby"
-                        width="100%" height="653" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2134.497830039758!2d39.84400433837246!3d57.657022965525776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b291975ff085d7%3A0xae1db2706ff662ac!2z0L_RgC4g0J7QutGC0Y_QsdGA0Y8sIDg4LCDQr9GA0L7RgdC70LDQstC70YwsINCv0YDQvtGB0LvQsNCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCAxNTAwMDM!5e0!3m2!1sru!2sby!4v1592916665504!5m2!1sru!2sby" width="100%" height="653" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
 
                 <div class="main__wrapper main__wrapper--contacts">
@@ -329,118 +328,6 @@
             <p class="page-footer__design">Designed by Sergey Strogiy</p>
         </div>
     </footer>
-
-    <script type="text/javascript">
-        var map;
-
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: {
-                    lat: 57.657214,
-                    lng: 39.845766
-                },
-                zoom: 18,
-                styles: [{
-                    "featureType": "poi.attraction",
-                    "elementType": "all",
-                    "stylers": [{
-                        "visibility": "off"
-                    }]
-                }, {
-                    "featureType": "poi.attraction",
-                    "elementType": "labels",
-                    "stylers": [{
-                        "visibility": "off"
-                    }]
-                }, {
-                    "featureType": "poi.attraction",
-                    "elementType": "labels.icon",
-                    "stylers": [{
-                        "visibility": "simplified"
-                    }]
-                }, {
-                    "featureType": "poi.business",
-                    "elementType": "all",
-                    "stylers": [{
-                        "visibility": "off"
-                    }]
-                }, {
-                    "featureType": "poi.business",
-                    "elementType": "labels.icon",
-                    "stylers": [{
-                        "visibility": "off"
-                    }]
-                }, {
-                    "featureType": "poi.government",
-                    "elementType": "labels.icon",
-                    "stylers": [{
-                        "visibility": "off"
-                    }]
-                }, {
-                    "featureType": "poi.medical",
-                    "elementType": "labels.icon",
-                    "stylers": [{
-                        "visibility": "off"
-                    }]
-                }, {
-                    "featureType": "poi.park",
-                    "elementType": "labels.icon",
-                    "stylers": [{
-                        "visibility": "off"
-                    }]
-                }, {
-                    "featureType": "poi.place_of_worship",
-                    "elementType": "labels",
-                    "stylers": [{
-                        "visibility": "off"
-                    }]
-                }, {
-                    "featureType": "poi.place_of_worship",
-                    "elementType": "labels.icon",
-                    "stylers": [{
-                        "visibility": "off"
-                    }]
-                }, {
-                    "featureType": "poi.school",
-                    "elementType": "labels",
-                    "stylers": [{
-                        "visibility": "off"
-                    }]
-                }, {
-                    "featureType": "poi.school",
-                    "elementType": "labels.icon",
-                    "stylers": [{
-                        "visibility": "off"
-                    }]
-                }, {
-                    "featureType": "poi.sports_complex",
-                    "elementType": "labels",
-                    "stylers": [{
-                        "visibility": "off"
-                    }]
-                }, {
-                    "featureType": "poi.sports_complex",
-                    "elementType": "labels.icon",
-                    "stylers": [{
-                        "visibility": "off"
-                    }]
-                }]
-            });
-
-            var marker = new google.maps.Marker({
-                position: {
-                    lat: 57.657214,
-                    lng: 39.845766
-                },
-                map: map,
-                title: 'Компания АртАктив',
-                icon: 'img/map-pin.svg',
-                animation: google.maps.Animation.BOUNCE
-            });
-
-        };
-    </script>
-    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
 </body>
 
 </html>
