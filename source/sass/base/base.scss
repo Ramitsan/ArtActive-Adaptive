@@ -5,14 +5,10 @@
 }
 
 body {
+    @include main-text();
     min-width: 1170px;
     margin: 0;
     box-sizing: border-box;
-    font-family: Open Sans, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    color: $color-font-main;
-    font-weight: normal;
     background-color: $color-white;
 }
 

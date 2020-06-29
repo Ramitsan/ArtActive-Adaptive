@@ -28,3 +28,20 @@
 .section__title--contacts {
     margin-bottom: 60px;
 }
+
+.section__text {
+    @include main-text();
+}
+
+.section__text--about {
+    width: 523px;
+}
+
+.section__text--interior-print {
+    width: 557px;
+    margin-bottom: 50px;
+}
+
+.section__text--polygraphy {
+    width: 555px;
+}
