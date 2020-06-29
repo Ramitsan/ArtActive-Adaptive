@@ -21,27 +21,30 @@
 }
 
 .page-header__call {
-    margin-left: 65px;
+    margin-left: 55px;
 }
 
 .page-header__call a {
+    font-family: $font-Open-Sans;
+    font-style: normal;
     color: $color-white;
     text-transform: uppercase;
 }
 
 .page-header__call-phone {
     font-size: 16px;
-    line-height: 16px;
+    line-height: 18px;
+    font-weight: 700;
 }
 
 .page-header__call-button {
+    font-weight: 800;
     font-size: 11px;
-    line-height: 11px;
+    line-height: 12px;
     padding: 7px 34px;
     margin-left: 30px;
     border-width: 2px;
     border-style: solid;
-    border-color: $color-white;
     border-radius: 17px;
 }
 

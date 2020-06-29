@@ -15,8 +15,11 @@
 .main-nav__link {
     display: inline-block;
     padding: 4px 25px;
-    color: $color-white;
+    font-family: $font-Open-Sans;
     font-size: 13px;
-    line-height: 15px;
+    line-height: 14px;
+    font-style: normal;
+    font-weight: 600;
     text-transform: uppercase;
+    color: $color-white;
 }
