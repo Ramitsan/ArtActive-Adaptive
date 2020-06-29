@@ -4,12 +4,8 @@
 }
 
 .btn-rose {
+    @include btn-rose-text ();
     background-color: $color-button-rose;
     display: inline-block;
-    color: $color-white;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: normal;
-    text-transform: uppercase;
     border-radius: 50px;
 }
