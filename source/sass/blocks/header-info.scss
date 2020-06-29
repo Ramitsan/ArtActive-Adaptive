@@ -3,21 +3,23 @@
 }
 
 .header-info__slogan {
-    width: 332px;
-    font-family: 'Montserrat', sans-serif;
+    width: 380px;
+    font-family: $font-Muller;
     font-size: 60px;
     line-height: 74px;
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 800;
     text-transform: uppercase;
     color: $color-white;
     margin: 0;
 }
 
 .header-info__title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-Muller;
     font-size: 32px;
-    line-height: 32px;
-    font-weight: normal;
+    line-height: 36px;
+    font-style: normal;
+    font-weight: 500;
     color: $color-white;
 }
 
