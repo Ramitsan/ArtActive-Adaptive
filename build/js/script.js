@@ -17,6 +17,7 @@
 //Показ и закрытие модального окна
 var headerCallButton = document.querySelector('.page-header__call-button'); //ссылка в хэдере
 var modalRequestCall = document.querySelector('.request-call'); //модальное окно "Закажите звонок"
+var modalCloseRequestCallButton = modalRequestCall.querySelector('.modal-close'); //кнопка закрытия
 var modalOverlay = document.querySelector('.modal-overlay');
 
 
@@ -24,8 +25,16 @@ var modalRequestCallShow = function() {
     modalRequestCall.classList.add('modal--show');
 };
 
+var modalRequestCallClose = function() {
+    modalRequestCall.classList.remove('modal--show');
+};
+
 var modalOverlayShow = function() {
     modalOverlay.classList.add('modal--show');
+};
+
+var modalOverlayClose = function() {
+    modalOverlay.classList.remove('modal--show');
 };
 
 headerCallButton.addEventListener('click', function(evt) {
@@ -33,3 +42,9 @@ headerCallButton.addEventListener('click', function(evt) {
     modalRequestCallShow();
     modalOverlayShow();
 });
+
+modalCloseRequestCallButton.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    modalRequestCallClose();
+    modalOverlayClose();
+})
