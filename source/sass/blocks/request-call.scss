@@ -1,3 +1,33 @@
 .request-call {
     width: 360px;
 }
+
+.request-call__text {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    color: $color-white;
+}
+
+.request-call__form input {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #ccc;
+    margin-right: 42px;
+    padding-bottom: 13px;
+    color: #fff;
+    outline: 0;
+}
+
+.request-call__form input[type="text"]::placeholder,
+.request-call__form input[type="tel"]::placeholder {
+    color: $color-white;
+    font-style: italic;
+}
+
+.request-call__button-submit {
+    margin-top: 30px;
+    padding: 17px 42px;
+}

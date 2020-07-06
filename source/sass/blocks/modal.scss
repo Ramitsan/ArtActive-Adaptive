@@ -1,16 +1,16 @@
 .modal-overlay {
-    // position: fixed;
+    display: none;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .4);
-    opacity: .95;
     z-index: 999;
 }
 
 .modal {
-    // display: none;
+    display: none;
     position: fixed;
     top: 275px;
     left: 50%;
@@ -18,33 +18,29 @@
     border-radius: 10px;
     background-color: $color-violet-decorative;
     background-image: url(../../img/modal-background.png);
+    background-size: cover;
     box-shadow: 0 10px 23px -10px #510856;
     z-index: 1000;
 }
 
-.modal-container {
+.modal--show {
+    display: block;
+}
+
+.modal__container {
     margin: 0 auto;
 }
 
-.modal-container--request-call {
+.modal__container--request-call {
     width: 245px;
     padding-top: 40px;
     padding-bottom: 55px;
 }
 
-.modal-container span {
+.modal__container--request-call span {
     font-size: 16px;
     line-height: 30px;
     font-weight: normal;
     font-style: italic;
-    color: $color-white;
-}
-
-.modal-container p {
-    margin-top: 0;
-    margin-bottom: 40px;
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 600;
     color: $color-white;
 }
