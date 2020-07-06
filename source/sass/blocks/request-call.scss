@@ -11,13 +11,21 @@
     color: $color-white;
 }
 
+.request-call__container {
+    display: flex;
+    flex-direction: column;
+}
+
 .request-call__form input {
+    width: 100%;
     background-color: transparent;
     border: 1px solid transparent;
     border-bottom: 1px solid #ccc;
     margin-right: 42px;
-    padding-bottom: 13px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
     color: #fff;
+    font-weight: bold;
     outline: 0;
 }
 
@@ -25,9 +33,9 @@
 .request-call__form input[type="tel"]::placeholder {
     color: $color-white;
     font-style: italic;
+    font-weight: normal;
 }
 
 .request-call__button-submit {
-    margin-top: 30px;
     padding: 17px 42px;
 }

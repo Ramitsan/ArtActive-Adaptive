@@ -20,16 +20,43 @@
 }
 
 .polygraphy__questions span {
-    font-size: 13px;
-    line-height: 16px;
-    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
     font-style: italic;
-    color: #383d52;
+    font-weight: normal;
+    color: $color-slogan;
 }
 
 .polygraphy__request {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: bold;
-    color: #383d52;
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 600;
+    color: $color-slogan;
+}
+
+.poligraphy-form {
+    width: 780px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.poligraphy-form input {
+    background-color: $color-background;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #cccccc;
+    margin-right: 42px;
+    padding-bottom: 13px;
+}
+
+.poligraphy-form input[type="text"]::placeholder,
+.poligraphy-form input[type="tel"]::placeholder {
+    color: #868995;
+    font-style: italic;
+}
+
+.poligraphy-form__button-submit {
+    padding: 17px 42px;
 }
