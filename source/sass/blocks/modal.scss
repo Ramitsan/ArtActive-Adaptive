@@ -10,7 +10,7 @@
 }
 
 .modal {
-    display: none;
+    // display: none;
     position: fixed;
     top: 275px;
     left: 50%;
@@ -20,6 +20,10 @@
 
 .modal--show {
     display: block;
+}
+
+.modal__wrapper {
+    position: relative;
 }
 
 .modal__container {
@@ -38,4 +42,41 @@
     font-weight: normal;
     font-style: italic;
     color: $color-white;
+}
+
+
+/* кнопка закрытия модальных окон */
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 23px;
+    height: 23px;
+    font-size: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+/* "крестик" на кнопке закрытия */
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -3px;
+    width: 27px;
+    height: 2px;
+    background: $color-white;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
 }

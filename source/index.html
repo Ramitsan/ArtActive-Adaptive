@@ -342,18 +342,21 @@
     <!-- Request-call -->
     <div class="modal-overlay "></div>
     <section class="modal request-call">
-        <div class="modal__container modal__container--request-call">
-            <span>Есть вопросы?</span>
-            <p class="request-call__text"> Закажите звонок</p>
-            <form action="" method="POST" class="request-call__form">
-                <p class="request-call__container">
-                    <label class="visually-hidden" for="request-call__user-name">Имя</label>
-                    <input type="text" id="request-call__user-name" name="name" placeholder="Имя">
-                    <label class="visually-hidden" for="request-call__user-tel">Телефон</label>
-                    <input type="tel" id="request-call__user-tel" name="phone" placeholder="Телефон">
-                    <button class="btn btn-rose request-call__button-submit" type="submit">Отправить</button>
-                </p>
-            </form>
+        <div class="modal__wrapper">
+            <div class="modal__container modal__container--request-call">
+                <span>Есть вопросы?</span>
+                <p class="request-call__text"> Закажите звонок</p>
+                <form action="" method="POST" class="request-call__form">
+                    <p class="request-call__container">
+                        <label class="visually-hidden" for="request-call__user-name">Имя</label>
+                        <input type="text" id="request-call__user-name" name="name" placeholder="Имя">
+                        <label class="visually-hidden" for="request-call__user-tel">Телефон</label>
+                        <input type="tel" id="request-call__user-tel" name="phone" placeholder="Телефон">
+                        <button class="btn btn-rose request-call__button-submit" type="submit">Отправить</button>
+                    </p>
+                </form>
+            </div>
+            <button class="modal-close" type="button">Закрыть</button>
         </div>
     </section>
     <!-- Request-call [END] -->
