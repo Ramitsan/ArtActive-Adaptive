@@ -1,5 +1,10 @@
 .request-call {
     width: 360px;
+    margin-left: -137px;
+    border-radius: 10px;
+    background-color: $color-violet-decorative;
+    background-image: url(../../img/modal-background.png);
+    background-size: cover;
 }
 
 .request-call__text {
