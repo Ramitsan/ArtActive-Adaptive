@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header class="page-header">
         <div class="page-header__wrapper">
             <div class="page-header__top">
@@ -72,6 +73,8 @@
             </div>
         </div>
     </header>
+    <!-- Header [END] -->
+    <!-- Main -->
     <main class="main">
         <div class="main__container">
             <section class="section about">
@@ -176,7 +179,7 @@
                         <div class="polygraphy__questions">
                             <span>Есть вопросы?</span>
                             <p class="polygraphy__request">Оставьте заявку на консультацию</p>
-                            <form action="" class="poligraphy-form">
+                            <form action="" method="POST" class="poligraphy-form">
                                 <p class="poligraphy-form__container">
                                     <label class="visually-hidden" for="poligraphy-form__user-name">Имя</label>
                                     <input type="text" id="poligraphy-form__user-name" name="name" placeholder="Имя">
@@ -324,6 +327,8 @@
 
         </div>
     </main>
+    <!-- Main [END] -->
+    <!-- Footer -->
     <footer class="page-footer">
         <div class="page-footer__wrapper">
             <p class="page-footer__copyright">ООО «АртАктив», 2017 ©</p>
@@ -333,6 +338,25 @@
             <p class="page-footer__design">Designed by Sergey Strogiy</p>
         </div>
     </footer>
+    <!-- Footer [END] -->
+    <!-- Request-call -->
+    <div class="modal-overlay "></div>
+    <section class="modal request-call">
+        <div class="modal-container modal-container--request-call">
+            <span>Есть вопросы?</span>
+            <p>Закажите консультацию</p>
+            <form action="" method="POST" class="modal-form">
+                <p class="modal-form__container">
+                    <label class="visually-hidden" for="modal-form__user-name">Имя</label>
+                    <input type="text" id="modal-form__user-name" name="name" placeholder="Имя">
+                    <label class="visually-hidden" for="modal-form__user-tel">Телефон</label>
+                    <input type="tel" id="modal-form__user-tel" name="phone" placeholder="Телефон">
+                    <button class="btn btn-rose modal-form__button-submit" type="submit">Отправить</button>
+                </p>
+            </form>
+        </div>
+    </section>
+    <!-- Request-call [END] -->
 </body>
 
 </html>
