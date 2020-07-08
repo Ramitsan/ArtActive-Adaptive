@@ -53,8 +53,29 @@
     background-repeat: no-repeat;
     background-position: -22% 40%;
     padding-top: 111px;
-    padding-bottom: 140px;
+    padding-bottom: 77px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+.page-header__bottom {
+    padding-top: 40px;
+    padding-bottom: 67px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.page-header__scroll {
+    display: inline-block;
+    width: 19px;
+    height: 31px;
+    background-image: url(../../img/scroll.png);
+    background-size: 19px auto;
+    background-position: center;
+    &:focus,
+    &:hover {
+        transform: scale(1.5);
+    }
 }
