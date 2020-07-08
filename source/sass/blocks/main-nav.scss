@@ -22,4 +22,8 @@
     font-weight: 600;
     text-transform: uppercase;
     color: $color-white;
+    &:focus,
+    &:hover {
+        transform: scale(1.5);
+    }
 }
