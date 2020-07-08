@@ -37,14 +37,25 @@ var modalOverlayClose = function() {
     modalOverlay.classList.remove('modal--show');
 };
 
+var disableScroll = function() {
+    document.body.classList.add('body-scroll');
+}
+
+var activateScroll = function() {
+    document.body.classList.remove('body-scroll');
+}
+
+
 headerCallButton.addEventListener('click', function(evt) {
     evt.preventDefault();
     modalRequestCallShow();
     modalOverlayShow();
+    disableScroll();
 });
 
 modalCloseRequestCallButton.addEventListener('click', function(evt) {
     evt.preventDefault();
     modalRequestCallClose();
     modalOverlayClose();
+    activateScroll();
 })
