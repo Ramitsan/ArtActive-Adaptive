@@ -1,16 +1,24 @@
 .interior-print {
     padding-top: 150px;
     padding-bottom: 145px;
-    background-image: url(../../img/sofa-and-tulips.png);
-    background-repeat: no-repeat;
-    background-size: 1276px auto;
-    background-position: 6vw, center;
 }
 
 .interior-print__container {
     width: 555px;
     margin-left: 600px;
     margin-bottom: 415px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../../img/sofa-and-tulips.png");
+        background-size: 1276px auto;
+        position: absolute;
+        right: 160px;
+        top: -20px;
+        width: 1276px;
+        height: 813px;
+    }
 }
 
 .interior-print__link {

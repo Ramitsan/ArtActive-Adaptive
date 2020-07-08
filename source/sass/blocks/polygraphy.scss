@@ -63,6 +63,7 @@
     position: relative;
     &::after {
         content: "";
+        position: absolute;
         background-image: url("../../img/poligrafhy-decor.png");
         background-size: 503px auto;
         position: absolute;
