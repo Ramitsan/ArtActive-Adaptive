@@ -44,6 +44,7 @@
 }
 
 .poligraphy-form input {
+    width: 245px;
     background-color: $color-background;
     border: 1px solid transparent;
     border-bottom: 1px solid #cccccc;
@@ -59,4 +60,15 @@
 
 .poligraphy-form__button-submit {
     padding: 17px 42px;
+    position: relative;
+    &::after {
+        content: "";
+        background-image: url("../../img/poligrafhy-decor.png");
+        background-size: 503px auto;
+        position: absolute;
+        left: 190px;
+        bottom: -32px;
+        width: 503px;
+        height: 340px;
+    }
 }
