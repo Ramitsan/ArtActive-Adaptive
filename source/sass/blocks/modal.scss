@@ -80,3 +80,18 @@
 .modal-close::after {
     transform: rotate(-45deg);
 }
+
+.modal-close:focus::before,
+.modal-close:hover::before {
+    transform: rotate(180deg);
+}
+
+.modal-close:focus::after,
+.modal-close:hover::after {
+    transform: rotate(90deg);
+}
+
+.modal-close:active::before,
+.modal-close:active::after {
+    outline: none;
+}

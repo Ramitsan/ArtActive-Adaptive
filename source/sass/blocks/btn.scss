@@ -9,4 +9,28 @@
     display: inline-block;
     border-radius: 50px;
     cursor: pointer;
+    outline: none;
+    &:focus,
+    &:hover {
+        background-color: $color-button-rose-hover;
+    }
+    &:active {
+        color: rgba(255, 255, 255, .3);
+    }
+}
+
+.btn--up {
+    position: fixed;
+    z-index: 100;
+    padding: 0;
+    bottom: 75px;
+    right: 30px;
+    display: none;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    font-size: 36px;
+    line-height: 65px;
+    text-align: center;
+    vertical-align: middle;
 }

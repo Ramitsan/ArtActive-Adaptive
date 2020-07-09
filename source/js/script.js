@@ -96,3 +96,18 @@ jQuery(function($) {
     $("#faq-consultation__user-tel").mask("+7 (999) 99 99 99");
     $("#request-call__user-tel").mask("+7 (999) 99 99 99");
 });
+
+//кнопка прокрутки
+var upButton = document.querySelector('.btn--up');
+
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 650) {
+        upButton.classList.add('modal--show');
+    } else {
+        upButton.classList.remove('modal--show');
+    }
+});
+
+upButton.addEventListener('click', function() {
+    window.scrollTo(0, 0);
+});
