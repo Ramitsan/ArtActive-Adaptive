@@ -17,6 +17,7 @@
 //Показ и закрытие модального окна
 var headerCallButton = document.querySelector('.page-header__call-button'); //ссылка в хэдере
 var modalRequestCall = document.querySelector('.request-call'); //модальное окно "Закажите звонок"
+var bannersPrintConsultationLink = document.querySelector('.banners-print__consultation-link'); //кнопка заказа консультации в блоке Услуги - Широкоформатная печать
 var modalCloseRequestCallButton = modalRequestCall.querySelector('.modal-close'); //кнопка закрытия
 var modalOverlay = document.querySelector('.modal-overlay');
 
@@ -58,6 +59,13 @@ modalCloseRequestCallButton.addEventListener('click', function(evt) {
     modalRequestCallClose();
     modalOverlayClose();
     activateScroll();
+})
+
+bannersPrintConsultationLink.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    modalRequestCallShow();
+    modalOverlayShow();
+    disableScroll();
 })
 
 //валидация телефонного номера
