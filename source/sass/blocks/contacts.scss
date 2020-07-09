@@ -40,6 +40,11 @@
     margin-bottom: 23px;
 }
 
+.contacts__email a,
+.contacts__phone a {
+    color: $color-font-main;
+}
+
 .contacts__address::before {
     content: "";
     position: absolute;
