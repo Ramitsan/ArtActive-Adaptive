@@ -101,7 +101,7 @@ jQuery(function($) {
 var upButton = document.querySelector('.btn--up');
 
 window.addEventListener('scroll', function() {
-    if (window.pageYOffset > 800) {
+    if (window.pageYOffset > 650) {
         upButton.classList.add('modal--show');
     } else {
         upButton.classList.remove('modal--show');
