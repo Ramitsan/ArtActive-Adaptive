@@ -46,6 +46,16 @@ var activateScroll = function() {
     document.body.classList.remove('body-scroll');
 }
 
+var overlayClickHandler = function(popup) {
+    modalOverlay.addEventListener('click', function() {
+        popup.classList.remove('modal--show');
+        modalOverlayClose();
+        activateScroll();
+    })
+}
+
+overlayClickHandler(modalRequestCall);
+
 
 headerCallButton.addEventListener('click', function(evt) {
     evt.preventDefault();
