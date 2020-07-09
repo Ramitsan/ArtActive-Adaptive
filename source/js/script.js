@@ -20,6 +20,7 @@ var modalRequestCall = document.querySelector('.request-call'); //модальн
 var bannersPrintConsultationLink = document.querySelector('.banners-print__consultation-link'); //кнопка заказа консультации в блоке Услуги - Широкоформатная печать
 var modalCloseRequestCallButton = modalRequestCall.querySelector('.modal-close'); //кнопка закрытия
 var modalOverlay = document.querySelector('.modal-overlay');
+var ESC_KEYCODE = 27;
 
 
 var modalRequestCallShow = function() {
@@ -77,6 +78,17 @@ bannersPrintConsultationLink.addEventListener('click', function(evt) {
     modalOverlayShow();
     disableScroll();
 })
+
+window.addEventListener('keydown', function(evt) {
+    if (evt.keyCode === ESC_KEYCODE) {
+        if (modalRequestCall.classList.contains('modal--show')) {
+            evt.preventDefault();
+            modalRequestCallClose();
+            modalOverlayClose();
+            activateScroll();
+        }
+    }
+});
 
 //валидация телефонного номера
 jQuery(function($) {
