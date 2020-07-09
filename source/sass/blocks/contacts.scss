@@ -2,7 +2,7 @@
     width: 100%;
     height: 653px;
     background-color: $color-background;
-    background-image: url(../../img/map-desktop.png);
+    background-image: url(../img/map-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 0px;
@@ -48,7 +48,7 @@
 .contacts__address::before {
     content: "";
     position: absolute;
-    background-image: url(../../img/map-pin.png);
+    background-image: url(../img/map-pin.png);
     width: 11px;
     height: 17px;
     left: 0px;
@@ -58,7 +58,7 @@
 .contacts__email::before {
     content: "";
     position: absolute;
-    background-image: url(../../img/mail.png);
+    background-image: url(../img/mail.png);
     width: 13px;
     height: 10px;
     left: 0px;
@@ -68,7 +68,7 @@
 .contacts__phone::before {
     content: "";
     position: absolute;
-    background-image: url(../../img/phone.png);
+    background-image: url(../img/phone.png);
     width: 14px;
     height: 15px;
     left: 0px;
