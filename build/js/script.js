@@ -59,3 +59,10 @@ modalCloseRequestCallButton.addEventListener('click', function(evt) {
     modalOverlayClose();
     activateScroll();
 })
+
+//валидация телефонного номера
+jQuery(function($) {
+    $("#poligraphy-form__user-tel").mask("+7 (999) 99 99 99");
+    $("#faq-consultation__user-tel").mask("+7 (999) 99 99 99");
+    $("#request-call__user-tel").mask("+7 (999) 99 99 99");
+});
