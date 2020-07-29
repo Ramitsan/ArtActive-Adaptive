@@ -1,37 +1,38 @@
 .btn {
-  border: 1px solid transparent;
-  vertical-align: middle;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
 .btn-rose {
-  @include btn-rose-text ();
-  background-color: $color-button-rose;
-  display: inline-block;
-  border-radius: 50px;
-  cursor: pointer;
-  outline: none;
-  &:focus,
-  &:hover {
-    background-color: $color-button-rose-hover;
-  }
-  &:active {
-    color: rgba(255, 255, 255, .3);
-  }
+    @include btn-rose-text ();
+    background-color: $color-button-rose;
+    display: inline-block;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    &:focus,
+    &:hover {
+        background-color: $color-button-rose-hover;
+    }
+    &:active {
+        color: rgba(255, 255, 255, .3);
+    }
 }
 
 .btn--up {
-  position: fixed;
-  z-index: 100;
-  padding: 0;
-  bottom: 75px;
-  right: 30px;
-  display: none;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 55px;
-  text-align: center;
-  vertical-align: middle;
+    position: fixed;
+    z-index: 100;
+    padding: 0;
+    bottom: 75px;
+    right: 30px;
+    display: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 55px;
+    text-align: center;
+    vertical-align: middle;
 }

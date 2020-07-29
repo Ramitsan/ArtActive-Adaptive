@@ -17,3 +17,9 @@
     padding-top: 123px;
     padding-bottom: 120px;
 }
+
+@media (max-width: $tablet-width) {
+    .main__wrapper {
+        width: 750px;
+    }
+}
