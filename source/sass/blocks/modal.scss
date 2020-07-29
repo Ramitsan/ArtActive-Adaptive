@@ -75,20 +75,24 @@
 
 .modal-close::before {
     transform: rotate(45deg);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
 }
 
 .modal-close::after {
     transform: rotate(-45deg);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
 }
 
 .modal-close:focus::before,
 .modal-close:hover::before {
-    transform: rotate(180deg);
+    transform: rotate(135deg);
 }
 
 .modal-close:focus::after,
 .modal-close:hover::after {
-    transform: rotate(90deg);
+    transform: rotate(45deg);
 }
 
 .modal-close:active::before,
