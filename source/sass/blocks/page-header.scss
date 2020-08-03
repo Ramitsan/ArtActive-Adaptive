@@ -81,4 +81,10 @@
     }
 }
 
-@media (max-width: $tablet-width) {}
+@media (max-width: $tablet-width) {
+    .page-header__call {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid red;
+    }
+}
