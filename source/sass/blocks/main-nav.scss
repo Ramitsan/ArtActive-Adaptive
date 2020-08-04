@@ -94,7 +94,6 @@
         height: 25px;
         cursor: pointer;
         border: none;
-        border: 1px solid green;
     }
     .main-nav--closed .main-nav__toggle::before {
         content: "";
@@ -120,6 +119,14 @@
     }
     .main-nav--opened .main-nav__toggle::after {
         transform: rotate(-45deg);
+    }
+    .main-nav--opened .main-nav__toggle:focus::before,
+    .main-nav--opened .main-nav__toggle:hover::before {
+        transform: rotate(135deg);
+    }
+    .main-nav--opened .main-nav__toggle:focus::after,
+    .main-nav--opened .main-nav__toggle:hover::after {
+        transform: rotate(45deg);
     }
     .main-nav__wrapper {
         flex-direction: column;
@@ -149,7 +156,7 @@
     .main-nav__call a {
         &:focus,
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
     }
     .main-nav__call-phone {
