@@ -52,6 +52,10 @@
     font-family: $font-Open-Sans;
     font-style: normal;
     text-transform: uppercase;
+    &:focus,
+    &:hover {
+        transform: scale(1.5);
+    }
 }
 
 .main-nav__call-phone {
@@ -141,6 +145,12 @@
         padding-bottom: 155px;
         display: flex;
         flex-direction: column;
+    }
+    .main-nav__call a {
+        &:focus,
+        &:hover {
+            transform: scale(1.2);
+        }
     }
     .main-nav__call-phone {
         color: #333333;
