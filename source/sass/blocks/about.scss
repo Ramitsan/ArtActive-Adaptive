@@ -60,3 +60,38 @@
     width: 590px;
     padding-left: 50px;
 }
+
+@media (max-width: $tablet-width) {
+    .about {
+        padding-top: 50px;
+        padding-bottom: 135px;
+    }
+    .about__container {
+        flex-direction: column;
+    }
+    .about__right {
+        width: 100%;
+        order: 1;
+        padding-left: 0;
+    }
+    .about__left {
+        order: 2;
+    }
+    .about__item:first-child {
+        width: 125px;
+        left: 183px;
+    }
+    .about__item:nth-child(2) {
+        width: 170px;
+        top: 210px;
+        right: -30px;
+    }
+    .about__item:nth-child(3) {
+        width: 150px;
+    }
+    .about__item:last-child {
+        width: 117px;
+        bottom: -23px;
+        left: 388px;
+    }
+}

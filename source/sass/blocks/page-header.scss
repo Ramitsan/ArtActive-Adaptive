@@ -22,7 +22,7 @@
 }
 
 .page-header__middle {
-    background-image: url(../img/header-middle-bg.png);
+    background-image: url(../img/header-middle-bg-desktop.png);
     background-repeat: no-repeat;
     background-position: -22% 40%;
     padding-top: 111px;
@@ -53,4 +53,22 @@
     }
 }
 
-@media (max-width: $tablet-width) {}
+@media (max-width: $tablet-width) {
+    .page-header__wrapper {
+        width: 100%;
+        padding: 0;
+    }
+    .page-header__top {
+        padding-top: 26px;
+    }
+    .page-header__middle {
+        background-image: url(../img/header-middle-bg-tablet.png);
+        background-position: 1%;
+        padding-top: 45px;
+        padding-bottom: 0px;
+    }
+    .page-header__bottom {
+        padding-top: 0px;
+        padding-bottom: 36px;
+    }
+}

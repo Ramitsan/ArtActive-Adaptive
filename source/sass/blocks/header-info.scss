@@ -47,3 +47,23 @@
     line-height: 16px;
     color: $color-white;
 }
+
+@media (max-width: $tablet-width) {
+    .header-info {
+        width: 300px;
+    }
+    .header-info__slogan {
+        width: 257px;
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .header-info__title {
+        font-size: 21px;
+        line-height: 24px;
+    }
+    .header-info__request {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}

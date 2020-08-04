@@ -45,3 +45,12 @@
 .section__text--polygraphy {
     width: 555px;
 }
+
+@media (max-width: $tablet-width) {
+    .section__slogan--about {
+        width: 100%;
+    }
+    .section__text--about {
+        width: 100%;
+    }
+}
