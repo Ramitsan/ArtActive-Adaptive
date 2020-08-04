@@ -20,7 +20,7 @@
 
 @media (max-width: $tablet-width) {
     .main__wrapper {
-        width: 750px;
+        min-width: 750px;
         margin: 0;
         padding: 0 30px;
     }

@@ -36,3 +36,20 @@
     right: 130px;
     font-size: 13px;
 }
+
+@media (max-width: $tablet-width) {
+    .slider__content {
+        width: 100%;
+        height: auto;
+        flex: 1;
+    }
+    .slider__content img {
+        width: 100%;
+    }
+    .slider__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
