@@ -64,12 +64,56 @@
     &::after {
         content: "";
         position: absolute;
-        background-image: url("../img/poligrafhy-decor.png");
+        background-image: url("../img/paper-plane-desctop.png");
         background-size: 503px auto;
         position: absolute;
         left: 190px;
         bottom: -32px;
         width: 503px;
         height: 340px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .polygraphy {
+        padding-bottom: 115px;
+        background-color: #faf8fb;
+    }
+    .polygraphy__questions {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .polygraphy__info {
+        margin-bottom: 78px;
+    }
+    .polygraphy__request {
+        width: 175px;
+        margin-bottom: 27px;
+    }
+    .poligraphy-form {
+        width: 100%;
+    }
+    .poligraphy-form__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .poligraphy-form input {
+        margin-bottom: 30px;
+    }
+    .poligraphy-form__button-submit {
+        width: 250px;
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url("../img/paper-plane-tablet.png");
+            background-size: 184px auto;
+            position: absolute;
+            left: 211px;
+            bottom: 8px;
+            width: 184px;
+            height: 303px;
+        }
     }
 }

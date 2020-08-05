@@ -2,13 +2,15 @@
 *::before,
 *::after {
     box-sizing: inherit;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 body {
     @include main-text();
-    min-width: 1170px;
+    min-width: 320px;
+    min-height: 100%;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     background-color: $color-white;
 }

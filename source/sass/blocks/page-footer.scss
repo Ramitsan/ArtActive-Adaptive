@@ -23,3 +23,9 @@
 .page-footer__confidentiality-link {
     text-decoration: underline;
 }
+
+@media (max-width: $tablet-width) {
+    .page-footer__wrapper {
+        width: 750px;
+    }
+}

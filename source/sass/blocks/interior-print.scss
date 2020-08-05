@@ -8,10 +8,10 @@
     margin-left: 600px;
     margin-bottom: 415px;
     position: relative;
-    &::after {
+    &::before {
         content: "";
         position: absolute;
-        background-image: url("../img/sofa-and-tulips.png");
+        background-image: url("../img/sofa-and-tulips-desktop.png");
         background-size: 1276px auto;
         position: absolute;
         right: 160px;
@@ -23,4 +23,30 @@
 
 .interior-print__link {
     padding: 18px 37px;
+}
+
+@media (max-width: $tablet-width) {
+    .interior-print {
+        padding-top: 55px;
+        padding-bottom: 98px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../img/sofa-and-tulips-tablet.png");
+            background-size: 536px auto;
+            right: 0vw;
+            top: -2px;
+            width: 536px;
+            height: 640px;
+        }
+    }
+    .interior-print__container {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 200px;
+        &::before {
+            display: none;
+        }
+    }
 }
