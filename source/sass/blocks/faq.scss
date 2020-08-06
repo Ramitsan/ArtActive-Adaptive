@@ -4,10 +4,10 @@
 }
 
 .faq__list {
+    width: 100%;
     list-style: none;
-    height: 445px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
@@ -16,19 +16,45 @@
 }
 
 .faq__item {
-    width: 555px;
+    width: 50%;
+}
+
+.faq__item:first-child {
+    order: 1;
+}
+
+.faq__item:nth-child(2) {
+    order: 3;
+}
+
+.faq__item:nth-child(3) {
+    order: 5;
+}
+
+.faq__item:nth-child(4) {
+    order: 2;
+}
+
+.faq__item:nth-child(5) {
+    order: 4;
+}
+
+.faq__item:last-child {
+    order: 6;
 }
 
 .faq__question {
     font-weight: bold;
     margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    color: $color-slogan;
 }
 
 .faq-consultation {
     width: 1140px;
     margin: 0 auto;
-    padding-top: 43px;
-    padding-bottom: 45px;
+    padding: 35px 0;
     border-radius: 10px;
     background-color: $color-violet-decorative;
     background-image: url(../img/faq-form-bg.png);
@@ -42,6 +68,20 @@
     color: $color-white;
 }
 
+.faq-consultation span {
+    font-size: 16px;
+    line-height: 30px;
+    font-style: italic;
+}
+
+.faq-consultation__request {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
 .faq-consultation__form {
     width: 780px;
     display: flex;
@@ -52,6 +92,7 @@
 
 .faq-consultation__form-container {
     width: 100%;
+    margin-top: 0;
 }
 
 .faq-consultation__form input {
@@ -72,5 +113,58 @@
 }
 
 .faq-consultation__button-submit {
-    padding: 17px 42px;
+    padding: 10px 42px;
+}
+
+@media (max-width: $tablet-width) {
+    .faq__list {
+        flex-direction: column;
+    }
+    .faq__item {
+        width: 100%;
+    }
+    .faq__item:first-child {
+        order: 1;
+    }
+    .faq__item:nth-child(2) {
+        order: 2;
+    }
+    .faq__item:nth-child(3) {
+        order: 3;
+    }
+    .faq__item:nth-child(4) {
+        order: 4;
+    }
+    .faq__item:nth-child(5) {
+        order: 5;
+    }
+    .faq__item:last-child {
+        order: 6;
+    }
+    .faq__question {
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+    .faq__answer {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .faq-consultation {
+        width: 100%;
+        background-color: $color-violet-decorative;
+        background-image: url(../img/faq-form-bg-tablet.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .faq-consultation span,
+    .faq-consultation__request {
+        margin-left: 30px;
+    }
+    .faq-consultation__form {
+        width: 100%;
+        margin-left: 33px;
+    }
+    .faq-consultation__form input {
+        width: 27%;
+    }
 }
