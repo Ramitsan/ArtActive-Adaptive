@@ -5,6 +5,7 @@
     background-image: url(../img/map-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     margin-top: 0px;
 }
 
@@ -73,4 +74,18 @@
     height: 15px;
     left: 0px;
     top: 3px;
+}
+
+@media (max-width: $tablet-width) {
+    .contacts {
+        height: 470px;
+        background-image: url(../img/map-tablet.png);
+        background-size: cover;
+    }
+    .contacts__container {
+        width: 390px;
+        padding-bottom: 75px;
+        padding-left: 55px;
+        padding-right: 60px;
+    }
 }

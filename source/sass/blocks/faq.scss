@@ -117,6 +117,10 @@
 }
 
 @media (max-width: $tablet-width) {
+    .faq {
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
     .faq__list {
         flex-direction: column;
     }
@@ -151,7 +155,6 @@
     }
     .faq-consultation {
         width: 100%;
-        background-color: $color-violet-decorative;
         background-image: url(../img/faq-form-bg-tablet.png);
         background-repeat: no-repeat;
         background-size: cover;
