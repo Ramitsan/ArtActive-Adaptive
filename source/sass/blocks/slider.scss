@@ -5,8 +5,13 @@
 }
 
 .slider__content {
-    width: 652px;
-    height: 545px;
+    width: 570px;
+    height: 460px;
+}
+
+.slider__content img {
+    border-radius: 10px;
+    width: 100%;
 }
 
 .slider__controls::before,
@@ -45,6 +50,8 @@
     }
     .slider__content img {
         width: 100%;
+        margin-bottom: 105px;
+        box-shadow: 0 -17px 0 -3px #b8b2bc, 0 -36px 0 -8px #e7e2ec;
     }
     .slider__item {
         display: flex;
