@@ -1,6 +1,7 @@
     .banners-print__container {
         display: flex;
         flex-direction: column;
+        position: relative;
     }
 
     .banners-print__info {
@@ -58,6 +59,9 @@
         margin: 0;
         padding: 0;
         padding-top: 81px;
+        position: absolute;
+        right: 0;
+        top: 65px;
     }
 
     @media (max-width: $tablet-width) {
@@ -68,21 +72,23 @@
             flex-wrap: nowrap;
         }
         .banners-print__list {
+            margin-bottom: 0;
             padding-left: 15px;
-            margin-bottom: 72px;
             order: 1;
         }
         .banners-print__slider {
-            order: 1;
+            order: 2;
         }
         .banners-print__consultation {
             justify-content: space-between;
             width: 100%;
-            order: 2;
+            order: 3;
+            margin-top: 50px;
         }
         .banners-print__slider {
             width: 100%;
             padding-top: 0;
+            position: relative;
         }
         .banners-print__consultation-left {
             margin-left: 0;
