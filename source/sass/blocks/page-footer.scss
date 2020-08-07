@@ -27,5 +27,14 @@
 @media (max-width: $tablet-width) {
     .page-footer__wrapper {
         width: 750px;
+        padding: 17px 30px;
+    }
+    .page-footer__copyright,
+    .page-footer__confidentiality-link {
+        font-size: 13px;
+        line-height: 1.5em;
+    }
+    .page-footer__design {
+        display: none;
     }
 }
