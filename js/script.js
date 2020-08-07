@@ -1,21 +1,21 @@
 'use strict';
-// var pageHeader = document.querySelector('.page-header');
-// var headerToggle = document.querySelector('.page-header__toggle');
+var mainNav = document.querySelector('.main-nav');
+var mainNavToggle = document.querySelector('.main-nav__toggle');
 
-// pageHeader.classList.remove('page-header--nojs');
+mainNav.classList.remove('page-header--nojs');
 
-// headerToggle.addEventListener('click', function () {
-//   if (pageHeader.classList.contains('page-header--closed')) {
-//     pageHeader.classList.remove('page-header--closed');
-//     pageHeader.classList.add('page-header--opened');
-//   } else {
-//     pageHeader.classList.add('page-header--closed');
-//     pageHeader.classList.remove('page-header--opened');
-//   }
-// });
+mainNavToggle.addEventListener('click', function() {
+    if (mainNav.classList.contains('main-nav--closed')) {
+        mainNav.classList.remove('main-nav--closed');
+        mainNav.classList.add('main-nav--opened');
+    } else {
+        mainNav.classList.add('main-nav--closed');
+        mainNav.classList.remove('main-nav--opened');
+    }
+});
 
 //Показ и закрытие модального окна
-var headerCallButton = document.querySelector('.page-header__call-button'); //ссылка в хэдере
+var mainNavCallButton = document.querySelector('.main-nav__call-button'); //ссылка в хэдере
 var modalRequestCall = document.querySelector('.request-call'); //модальное окно "Закажите звонок"
 var bannersPrintConsultationLink = document.querySelector('.banners-print__consultation-link'); //кнопка заказа консультации в блоке Услуги - Широкоформатная печать
 var modalCloseRequestCallButton = modalRequestCall.querySelector('.modal-close'); //кнопка закрытия
@@ -58,7 +58,7 @@ var overlayClickHandler = function(popup) {
 overlayClickHandler(modalRequestCall);
 
 
-headerCallButton.addEventListener('click', function(evt) {
+mainNavCallButton.addEventListener('click', function(evt) {
     evt.preventDefault();
     modalRequestCallShow();
     modalOverlayShow();
