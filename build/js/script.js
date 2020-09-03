@@ -1,4 +1,5 @@
 'use strict';
+//показ и закрытие бургерного меню
 var mainNav = document.querySelector('.main-nav');
 var mainNavToggle = document.querySelector('.main-nav__toggle');
 
@@ -58,7 +59,6 @@ var overlayClickHandler = function(popup) {
 }
 
 overlayClickHandler(modalRequestCall);
-
 
 mainNavCallButton.addEventListener('click', function(evt) {
     evt.preventDefault();

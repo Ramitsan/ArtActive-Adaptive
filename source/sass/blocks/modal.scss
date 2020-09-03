@@ -57,6 +57,7 @@
     border: 0;
     cursor: pointer;
     background-color: transparent;
+    outline: none;
 }
 
 
@@ -71,18 +72,16 @@
     width: 27px;
     height: 2px;
     background: $color-white;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
 }
 
 .modal-close::before {
     transform: rotate(45deg);
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.2s;
 }
 
 .modal-close::after {
     transform: rotate(-45deg);
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.2s;
 }
 
 .modal-close:focus::before,

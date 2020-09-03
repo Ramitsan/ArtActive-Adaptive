@@ -96,6 +96,7 @@
         height: 25px;
         cursor: pointer;
         outline: none;
+        border: red;
     }
     .main-nav--closed .main-nav__toggle::before {
         content: "";
@@ -119,8 +120,6 @@
         width: 27px;
         height: 2px;
         background-color: #b4b4b4;
-        transition-timing-function: ease-in-out;
-        transition-duration: .2s;
     }
     .main-nav--opened .main-nav__toggle::before {
         transform: rotate(45deg);
