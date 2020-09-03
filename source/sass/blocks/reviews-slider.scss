@@ -7,6 +7,7 @@
         flex-direction: row;
         margin: 0 auto;
         position: relative;
+        justify-content: center;
     }
 
     .reviews-slider__item {
@@ -92,4 +93,22 @@
 
     .reviews-slider__control--next::after {
         background-image: url(../../img/arrow-right.png);
+    }
+
+    @media (max-width: $tablet-width) {
+        .reviews-slider {
+            width: 100%;
+        }
+        .reviews-slider__item {
+            width: 720px;
+            margin-right: 15px;
+            margin-left: 15px;
+            padding: 60px 63px;
+        }
+        .reviews-slider__content {
+            margin-left: 50px;
+        }
+        .reviews-slider__blockquote {
+            width: 405px;
+        }
     }
