@@ -2,9 +2,10 @@
 var mainNav = document.querySelector('.main-nav');
 var mainNavToggle = document.querySelector('.main-nav__toggle');
 
-mainNav.classList.remove('page-header--nojs');
+mainNav.classList.remove('main-nav--nojs');
 
 mainNavToggle.addEventListener('click', function() {
+    console.log('zzz');
     if (mainNav.classList.contains('main-nav--closed')) {
         mainNav.classList.remove('main-nav--closed');
         mainNav.classList.add('main-nav--opened');
@@ -13,6 +14,7 @@ mainNavToggle.addEventListener('click', function() {
         mainNav.classList.remove('main-nav--opened');
     }
 });
+
 
 //Показ и закрытие модального окна
 var mainNavCallButton = document.querySelector('.main-nav__call-button'); //ссылка в хэдере
