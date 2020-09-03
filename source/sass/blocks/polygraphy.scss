@@ -1,7 +1,7 @@
 .polygraphy {
     padding-bottom: 160px;
     background-color: #faf8fb;
-    background-image: url('../../img/company-style-desktop.png');
+    background-image: url('../img/company-style-desktop.png');
     background-repeat: no-repeat;
     background-size: 648px auto;
     background-position: right top;
@@ -85,7 +85,7 @@
 @media (max-width: $tablet-width) {
     .polygraphy {
         padding-bottom: 115px;
-        background-image: url('../../img/company-style-tablet.png');
+        background-image: url('../img/company-style-tablet.png');
         background-repeat: no-repeat;
         background-size: 364px auto;
         background-position: right bottom 50px;
