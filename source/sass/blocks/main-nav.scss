@@ -110,30 +110,19 @@
     .main-nav--closed .main-nav__toggle:hover::before {
         transform: scale(1.3);
     }
-    .main-nav--opened .main-nav__toggle::before,
     .main-nav--opened .main-nav__toggle::after {
         content: "";
         position: absolute;
-        z-index: 99;
-        top: 10px;
-        left: -3px;
-        width: 27px;
-        height: 2px;
-        background-color: #b4b4b4;
-    }
-    .main-nav--opened .main-nav__toggle::before {
-        transform: rotate(45deg);
-    }
-    .main-nav--opened .main-nav__toggle::after {
-        transform: rotate(-45deg);
-    }
-    .main-nav--opened .main-nav__toggle:focus::before,
-    .main-nav--opened .main-nav__toggle:hover::before {
-        transform: rotate(135deg);
+        width: 16px;
+        height: 16px;
+        background-image: url('../img/cross-menu-tablet.png');
+        background-repeat: no-repeat;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.2s;
     }
     .main-nav--opened .main-nav__toggle:focus::after,
     .main-nav--opened .main-nav__toggle:hover::after {
-        transform: rotate(45deg);
+        transform: rotate(90deg);
     }
     .main-nav--nojs .main-nav__toggle {
         display: none;
