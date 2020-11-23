@@ -1,183 +1,191 @@
 .main-nav {
-    margin-left: 60px;
+  margin-left: 65px;
 }
 
 .main-nav a {
-    display: inline-block;
+  display: inline-block;
 }
 
 .main-nav__toggle {
-    display: none;
-    background-color: transparent;
+  display: none;
+  background-color: transparent;
 }
 
 .main-nav__wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .main-nav__list {
-    width: 555px;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    list-style: none;
+  width: 590px;
+  padding-left: 15px;
+  margin: 0;
+  margin-top: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 .main-nav__link {
-    padding: 4px 25px;
-    font-family: $font-Open-Sans;
-    font-size: 13px;
-    line-height: 14px;
-    font-style: normal;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: $color-white;
-    &:focus,
-    &:hover {
-        transform: scale(1.5);
-    }
+  padding: 4px 29px;
+  font-family: $font-Open-Sans;
+  font-size: 13px;
+  line-height: 14px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $color-white;
+  &:focus,
+  &:hover {
+    transform: scale(1.3);
+    transition: all .2s ease-in-out;
+  }
 }
 
 .main-nav__call {
-    margin-left: 50px;
-    list-style: none;
+  margin-top: 0;
+  // margin-left: 18px;
+  list-style: none;
+  display: flex;
+  padding-left: 15px;
 }
 
 .main-nav__call a {
-    font-family: $font-Open-Sans;
-    font-style: normal;
-    text-transform: uppercase;
-    &:focus,
-    &:hover {
-        transform: scale(1.5);
-    }
+  font-family: $font-Open-Sans;
+  font-style: normal;
+  text-transform: uppercase;
+  &:focus,
+  &:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+  }
 }
 
 .main-nav__call-phone {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 700;
-    color: $color-white;
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $color-white;
 }
 
 .main-nav__call-button {
-    font-weight: 800;
-    font-size: 11px;
-    line-height: 12px;
-    padding: 7px 34px;
-    margin-left: 30px;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 17px;
-    color: $color-white;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 12px;
+  padding: 8px 25px;
+  margin-left: 35px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 17px;
+  color: $color-white;
 }
 
 @media (max-width: $tablet-width) {
-    .main-nav {
-        position: absolute;
-        z-index: 100;
-        top: 0;
-        right: 0;
-        width: 302px;
-        margin: 0px;
-        background-color: $color-white;
+  .main-nav {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    width: 302px;
+    margin: 0px;
+    background-color: $color-white;
+  }
+  .main-nav__toggle {
+    position: absolute;
+    top: 27px;
+    right: 30px;
+    z-index: 1000;
+    display: block;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    outline: none;
+  }
+  .main-nav--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    background-image: url('../img/burger-menu-tablet.png');
+    background-repeat: no-repeat;
+  }
+  .main-nav--closed .main-nav__toggle:focus::before,
+  .main-nav--closed .main-nav__toggle:hover::before {
+    transform: scale(1.3);
+  }
+  .main-nav--opened .main-nav__toggle::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/cross-menu-tablet.png');
+    background-repeat: no-repeat;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+  }
+  .main-nav--opened .main-nav__toggle:focus::after,
+  .main-nav--opened .main-nav__toggle:hover::after {
+    transform: rotate(90deg);
+  }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
+  }
+  .main-nav--opened .main-nav__wrapper {
+    display: block;
+  }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+  .main-nav--nojs .main-nav__wrapper {
+    display: block;
+  }
+  .main-nav__wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .main-nav__list {
+    width: 302px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .main-nav__link {
+    display: block;
+    font-size: 13px;
+    line-height: 48px;
+    color: $color-mobile-menu;
+    &:focus,
+    &:hover {
+      transform: scale(1.2);
     }
-    .main-nav__toggle {
-        position: absolute;
-        top: 27px;
-        right: 30px;
-        z-index: 1000;
-        display: block;
-        width: 35px;
-        height: 25px;
-        cursor: pointer;
-        outline: none;
+  }
+  .main-nav__call {
+    margin: 0;
+    padding-top: 85px;
+    padding-bottom: 155px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-nav__call a {
+    &:focus,
+    &:hover {
+      transform: scale(1.1);
     }
-    .main-nav--closed .main-nav__toggle::before {
-        content: "";
-        position: absolute;
-        width: 35px;
-        height: 25px;
-        background-image: url('../img/burger-menu-tablet.png');
-        background-repeat: no-repeat;
-    }
-    .main-nav--closed .main-nav__toggle:focus::before,
-    .main-nav--closed .main-nav__toggle:hover::before {
-        transform: scale(1.3);
-    }
-    .main-nav--opened .main-nav__toggle::after {
-        content: "";
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        background-image: url('../img/cross-menu-tablet.png');
-        background-repeat: no-repeat;
-        transition-timing-function: ease-in-out;
-        transition-duration: 0.2s;
-    }
-    .main-nav--opened .main-nav__toggle:focus::after,
-    .main-nav--opened .main-nav__toggle:hover::after {
-        transform: rotate(90deg);
-    }
-    .main-nav--nojs .main-nav__toggle {
-        display: none;
-    }
-    .main-nav--closed .main-nav__wrapper {
-        display: none;
-    }
-    .main-nav--opened .main-nav__wrapper {
-        display: block;
-    }
-    .main-nav--nojs .main-nav__toggle {
-        display: none;
-    }
-    .main-nav--nojs .main-nav__wrapper {
-        display: block;
-    }
-    .main-nav__wrapper {
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .main-nav__list {
-        width: 302px;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .main-nav__link {
-        display: block;
-        font-size: 13px;
-        line-height: 48px;
-        color: $color-mobile-menu;
-        &:focus,
-        &:hover {
-            transform: scale(1.2);
-        }
-    }
-    .main-nav__call {
-        margin: 0;
-        padding-top: 85px;
-        padding-bottom: 155px;
-        display: flex;
-        flex-direction: column;
-    }
-    .main-nav__call a {
-        &:focus,
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
-    .main-nav__call-phone {
-        color: #333333;
-    }
-    .main-nav__call-button {
-        color: $color-button-rose;
-        margin-left: 0;
-        padding: 12px 32px;
-        margin-top: 30px;
-    }
+  }
+  .main-nav__call-phone {
+    color: #333333;
+  }
+  .main-nav__call-button {
+    color: $color-button-rose;
+    margin-left: 0;
+    padding: 12px 32px;
+    margin-top: 30px;
+  }
 }

@@ -1,103 +1,118 @@
 .header-info {
-    width: 514px;
-    display: flex;
-    flex-direction: column;
+  width: 514px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/header-middle-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 647px auto;
+    // background-position: 10px center;
+    right: 604px;
+    top: -43px;
+    width: 647px;
+    height: 548px;
+  }
 }
 
 .header-info__slogan {
-    width: 380px;
-    font-family: $font-Muller;
-    font-size: 60px;
-    line-height: 74px;
-    font-style: normal;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: $color-white;
-    margin: 0;
+  width: 380px;
+  font-family: $font-Muller;
+  font-size: 60px;
+  line-height: 128%;
+  letter-spacing: 3px;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $color-white;
+  margin: 0;
 }
 
 .header-info__title {
-    font-family: $font-Muller;
-    font-size: 32px;
-    line-height: 36px;
-    font-style: normal;
-    font-weight: 500;
-    color: $color-white;
+  margin-top: 33px;
+  font-family: $font-Muller;
+  font-size: 32px;
+  line-height: 120%;
+  font-style: normal;
+  font-weight: 500;
+  color: $color-white;
 }
 
 .header-info__request {
-    width: 485px;
-    margin-top: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  width: 485px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header-info__link {
-    padding: 17px 42px;
-    text-align: center;
+  padding: 13px 42px;
+  text-align: center;
 }
 
 .header-info__delivery {
-    width: 210px;
-    margin: 0;
-    margin-top: 10px;
-    font-family: $font-Open-Sans;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    color: $color-white;
+  width: 210px;
+  margin: 0;
+  margin-top: 10px;
+  font-family: $font-Open-Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-white;
 }
 
 @media (max-width: $tablet-width) {
-    .header-info {
-        width: 282px;
-    }
-    .header-info__slogan {
-        width: 257px;
-        font-size: 45px;
-        line-height: 55px;
-    }
-    .header-info__title {
-        font-size: 21px;
-        line-height: 24px;
-    }
-    .header-info__request {
-        width: 100%;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
+  .header-info {
+    width: 282px;
+  }
+  .header-info__slogan {
+    width: 257px;
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .header-info__title {
+    font-size: 21px;
+    line-height: 24px;
+  }
+  .header-info__request {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: $mobile-width) {
-    .header-info {
-        width: 100%;
-        margin-top: 345px;
-        justify-content: center;
-        align-items: center;
-    }
-    .header-info__slogan {
-        align-self: flex-start;
-    }
-    .header-info__title {
-        max-width: 556px;
-    }
-    .header-info__title br {
-        display: none;
-    }
-    .header-info__request {
-        align-items: center;
-        margin-top: 43px;
-    }
-    .header-info__link {
-        width: 290px;
-        padding: 15px 13px;
-    }
-    .header-info__delivery {
-        width: 100%;
-        margin-top: 25px;
-        max-width: 395px;
-    }
+  .header-info {
+    width: 100%;
+    margin-top: 345px;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-info__slogan {
+    align-self: flex-start;
+  }
+  .header-info__title {
+    max-width: 556px;
+  }
+  .header-info__title br {
+    display: none;
+  }
+  .header-info__request {
+    align-items: center;
+    margin-top: 43px;
+  }
+  .header-info__link {
+    width: 290px;
+    padding: 15px 13px;
+  }
+  .header-info__delivery {
+    width: 100%;
+    margin-top: 25px;
+    max-width: 395px;
+  }
 }
