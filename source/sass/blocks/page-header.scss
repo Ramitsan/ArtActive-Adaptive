@@ -85,15 +85,6 @@
     .page-header__middle {
         flex-direction: column;
         align-items: center;
-        &::before {
-            content: "";
-            background-image: url(../img/header-middle-bg-mobile.png);
-            background-size: 309px auto;
-            background-position: 10px center;
-            width: 309px;
-            height: 288px;
-            left: 0;
-        }
     }
     .page-header__scroll {
         display: none;

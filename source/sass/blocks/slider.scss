@@ -78,3 +78,20 @@
         left: 130px;
     }
 }
+
+@media (max-width: $mobile-width) {
+    .slider__details {
+        bottom: 60px;
+        flex-direction: column;
+    }
+    .slider__comment {
+        order: 1;
+    }
+    .slider__controls {
+        order: 2;
+    }
+    .slider__controls::after,
+    .slider__controls::before {
+        bottom: -15px;
+    }
+}

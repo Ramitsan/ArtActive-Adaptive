@@ -110,3 +110,11 @@
         padding-right: 60px;
     }
 }
+
+@media (max-width: $mobile-width) {
+    .contacts {
+        &::before {
+            display: none;
+        }
+    }
+}

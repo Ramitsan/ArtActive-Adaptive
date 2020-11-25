@@ -47,7 +47,7 @@
 }
 
 @media (max-width: $tablet-width) {
-    .section__slogan--about {
+    .section__slogan {
         width: 100%;
     }
     .section__text--about {
@@ -62,5 +62,16 @@
     }
     .section__text--polygraphy {
         width: 100%;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .section__slogan {
+        font-size: 24px;
+        line-height: 130%;
+    }
+    .section__slogan--service-one {
+        max-width: 100%;
+        margin-bottom: 30px;
     }
 }

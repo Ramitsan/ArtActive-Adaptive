@@ -98,11 +98,25 @@
     .header-info {
         width: 100%;
         margin-top: 345px;
+        margin-left: 0;
         justify-content: center;
         align-items: center;
+        &::before {
+            background-image: url(../img/header-middle-bg-mobile.png);
+            background-size: 309px auto;
+            right: 315px;
+            top: -360px;
+            width: 309px;
+            height: 288px;
+            left: 0;
+        }
     }
     .header-info__slogan {
+        width: 100%;
+        max-width: 556px;
         align-self: flex-start;
+        font-size: 36px;
+        line-height: 130%;
     }
     .header-info__title {
         max-width: 556px;

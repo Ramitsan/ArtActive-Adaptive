@@ -103,4 +103,21 @@
         padding-top: 35px;
         padding-bottom: 50px;
     }
+    .about__item:first-child {
+        left: 92px;
+    }
+    .about__item:nth-child(2) {
+        width: 100px;
+        top: 310px;
+        left: 202px;
+    }
+    .about__item:nth-child(3) {
+        width: 128px;
+        top: 403px;
+        left: 7px;
+    }
+    .about__item:last-child {
+        bottom: -23px;
+        left: 96px;
+    }
 }

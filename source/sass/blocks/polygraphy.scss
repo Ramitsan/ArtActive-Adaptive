@@ -151,3 +151,11 @@
         width: 240px;
     }
 }
+
+@media (max-width: $mobile-width) {
+    .polygraphy {
+        &::before {
+            display: none;
+        }
+    }
+}
