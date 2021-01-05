@@ -80,7 +80,7 @@
         padding: 0 15px;
     }
     .page-header__top {
-        padding-top: 23px;
+        padding-top: 14px;
     }
     .page-header__middle {
         flex-direction: column;
@@ -88,5 +88,8 @@
     }
     .page-header__scroll {
         display: none;
+    }
+    .page-header__bottom {
+        padding-bottom: 67px;
     }
 }

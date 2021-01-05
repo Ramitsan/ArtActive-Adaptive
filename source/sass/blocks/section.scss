@@ -68,10 +68,26 @@
 @media (max-width: $mobile-width) {
     .section__slogan {
         font-size: 24px;
-        line-height: 130%;
+        line-height: 125%;
+    }
+    .section__title--about {
+        margin-bottom: 0px;
+    }
+    .section__slogan--about {
+        margin-top: 20px;
+        margin-bottom: 27px;
+    }
+    .section__text--about {
+        margin-bottom: 25px;
+    }
+    .section__text--about:last-child {
+        margin-bottom: 32px;
     }
     .section__slogan--service-one {
         max-width: 100%;
         margin-bottom: 30px;
+    }
+    .section__title--banners-print {
+        margin-bottom: 12px;
     }
 }

@@ -9,3 +9,9 @@
         padding: 50px 0;
     }
 }
+
+@media (max-width: $mobile-width) {
+    .services__item--one {
+        padding: 40px 0;
+    }
+}

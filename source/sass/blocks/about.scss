@@ -100,24 +100,28 @@
 @media (max-width: $mobile-width) {
     .about {
         width: 100%;
-        padding-top: 35px;
-        padding-bottom: 50px;
+        padding-top: 10px;
+        padding-bottom: 80px;
     }
     .about__item:first-child {
-        left: 92px;
+        top: 118px;
+        left: 80px;
     }
     .about__item:nth-child(2) {
         width: 100px;
-        top: 310px;
-        left: 202px;
+        top: 316px;
+        left: 182px;
     }
     .about__item:nth-child(3) {
         width: 128px;
-        top: 403px;
-        left: 7px;
+        top: 411px;
+        left: -4px;
     }
     .about__item:last-child {
-        bottom: -23px;
-        left: 96px;
+        bottom: -27px;
+        left: 84px;
+    }
+    .about__image {
+        margin-left: 7px;
     }
 }

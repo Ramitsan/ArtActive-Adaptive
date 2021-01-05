@@ -94,4 +94,7 @@
     .slider__controls::before {
         bottom: -15px;
     }
+    .slider__content img {
+        box-shadow: 0 -10px 0 -3px #b8b2bc, 0 -23px 0 -8px #e7e2ec, 0 17px 30px 0 #cdaccf;
+    }
 }
