@@ -81,20 +81,28 @@
 
 @media (max-width: $mobile-width) {
     .slider__details {
-        bottom: 60px;
+        bottom: 66px;
         flex-direction: column;
     }
     .slider__comment {
         order: 1;
+    }
+    .slider__content img {
+        box-shadow: 0 -7px 0 -3px #b8b2bc, 0 -16px 0 -8px #e7e2ec, 0 17px 30px 0 #cdaccf;
     }
     .slider__controls {
         order: 2;
     }
     .slider__controls::after,
     .slider__controls::before {
-        bottom: -15px;
+        bottom: -29px;
+        right: 50vw;
     }
-    .slider__content img {
-        box-shadow: 0 -10px 0 -3px #b8b2bc, 0 -23px 0 -8px #e7e2ec, 0 17px 30px 0 #cdaccf;
+    .slider__controls::before {
+        left: 24vw;
+        margin-left: -14vw;
+    }
+    .slider__controls::after {
+        left: 52vw;
     }
 }

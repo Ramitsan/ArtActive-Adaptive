@@ -1,40 +1,40 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-  // border: 1px solid red;
+    box-sizing: inherit;
+    // border: 1px solid red;
 }
 
 body {
-  @include main-text();
-  min-width: 320px;
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: $color-white;
+    @include main-text();
+    min-width: 320px;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $color-white;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: 0;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .body-scroll {
-  overflow: hidden;
+    overflow: hidden;
 }
