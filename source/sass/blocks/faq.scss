@@ -171,3 +171,38 @@
         width: 27%;
     }
 }
+
+@media (max-width: $mobile-width) {
+    .faq {
+        padding-top: 28px;
+    }
+    .faq__list {
+        margin-top: 0;
+    }
+    .faq__question {
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+    .faq__item:nth-child(3) .faq__question {
+        margin-top: 14px;
+    }
+    .faq__item:last-child .faq__question {
+        margin-top: 25px;
+    }
+    .faq__item:last-child {
+        margin-bottom: 6px;
+    }
+    .faq-consultation {
+        padding: 45px 20px;
+    }
+    .faq-consultation__form {
+        margin-left: 0;
+    }
+    .faq-consultation__form-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .faq-consultation__form input {
+        width: 100%;
+    }
+}

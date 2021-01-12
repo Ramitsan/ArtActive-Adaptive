@@ -31,7 +31,7 @@
         height: 544px;
         background-image: url('../img/company-style-desktop.png');
         background-repeat: no-repeat;
-        top: 0px;
+        bottom: -162px;
         left: 585px;
     }
 }
@@ -140,7 +140,7 @@
             height: 381px;
             background-image: url("../img/company-style-tablet.png");
             background-repeat: no-repeat;
-            top: 350px;
+            bottom: -400px;
             left: 52vw;
         }
     }
@@ -154,8 +154,39 @@
 
 @media (max-width: $mobile-width) {
     .polygraphy {
+        padding-bottom: 48px;
         &::before {
             display: none;
         }
+    }
+    .polygraphy__info {
+        margin-bottom: 216px;
+        &::after {
+            width: 304px;
+            height: 255px;
+            background-image: url("../img/company-style-mobile.png");
+            bottom: -253px;
+            left: 46vw;
+            margin-left: -152px;
+        }
+    }
+    .polygraphy__questions {
+        width: 100%;
+    }
+    .polygraphy__request {
+        margin-bottom: 14px;
+    }
+    .poligraphy-form input {
+        width: 290px;
+        padding-left: 13px;
+        padding-bottom: 12px;
+        margin-bottom: 32px;
+    }
+    .poligraphy-form::after {
+        display: none;
+    }
+    .poligraphy-form__button-submit {
+        width: 288px;
+        padding: 10px 42px;
     }
 }

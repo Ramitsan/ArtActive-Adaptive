@@ -112,3 +112,51 @@
             width: 405px;
         }
     }
+
+    @media (max-width: $mobile-width) {
+        .reviews-slider__item {
+            width: 100%;
+            min-width: 290px;
+            flex-direction: column;
+            padding: 61px 20px;
+            padding-bottom: 38px;
+        }
+        .reviews-slider__content {
+            margin-left: 0px;
+            margin-top: 28px;
+            width: 100%;
+        }
+        .reviews-slider__blockquote {
+            width: 100%;
+        }
+        .reviews-slider__author-photo {
+            margin-left: -25px;
+        }
+        .reviews-slider__text {
+            margin-bottom: 32px;
+        }
+        .reviews-slider__author-name {
+            font-size: 16px;
+            line-height: 30px;
+            color: $color-slogan;
+            font-weight: 600;
+            font-style: normal;
+            margin-bottom: -4px;
+        }
+        .reviews-slider__author-link {
+            font-size: 14px;
+            line-height: 30px;
+            color: #3594dd;
+            font-weight: 600;
+            font-style: normal;
+        }
+        .reviews-slider__control {
+            top: 50px;
+        }
+        .reviews-slider__control--prev {
+            left: 28px;
+        }
+        .reviews-slider__control--next {
+            left: 166px;
+        }
+    }

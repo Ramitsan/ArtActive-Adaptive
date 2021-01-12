@@ -50,3 +50,23 @@
         }
     }
 }
+
+@media (max-width: $mobile-width) {
+    .interior-print {
+        padding-top: 44px;
+        padding-bottom: 52px;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../img/sofa-and-tulips-mobile.png");
+            background-size: 281px auto;
+            right: 0vw;
+            top: 338px;
+            width: 281px;
+            height: 355px;
+        }
+    }
+    .interior-print__link {
+        padding: 11px 59px;
+    }
+}

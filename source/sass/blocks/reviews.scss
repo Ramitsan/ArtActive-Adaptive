@@ -2,3 +2,9 @@
     padding-top: 130px;
     padding-bottom: 70px;
 }
+
+@media (max-width: $mobile-width) {
+    .reviews {
+        padding-top: 30px;
+    }
+}
